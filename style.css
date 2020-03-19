@@ -1,0 +1,9 @@
+body {
+    background-color: black;
+}
+h1#about {
+    color: whitesmoke;
+}
+h1#name {
+    color: turquoise;
+}
