@@ -1,11 +1,19 @@
+/* HTML section */
+
 body {
     background-color: black;
 }
 
+/* Class section */
+
+.container {
+    background-color: chocolate;
+}
+
 .turquoise {
-    color: turquoise;
+    background-color: turquoise;
 }
 
 .white {
-    color: white;
+    background-color: white;
 }
