@@ -39,6 +39,46 @@ h1 {
     width: 100%;
 }
 
+.person-img {
+    background-image: url("susana_img.jpg");
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.person-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.person-name {
+    font-weight: 900;
+    line-height: 1.17;
+    color: #ffffff;
+    text-align: center;
+}
+
+.person-position {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    line-height: normal;
+    color: #00c483;
+}
+
+.person-socials-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin: 15px 0 70px;
+}
+
 .site-content-head {
     display: flex;
     height: 100%;
