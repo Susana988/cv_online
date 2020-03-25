@@ -1,9 +1,53 @@
+/* HTML section */
+
 body {
-    background-color: black;
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
 }
-h1#about {
-    color: whitesmoke;
+
+h1 {
+    font-size: 70px;
 }
-h1#name {
-    color: turquoise;
+
+/* Class section */
+
+.container {
+    background-color: chocolate;
+}
+
+.entry-title {
+    text-transform: lowercase;
+    font-weight: 900;
+    line-height: normal;
+    padding-right: 30px;
+    color: #ffffff;
+}
+
+.left-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1c1e1f;
+    margin: 40px 0;
+    flex-basis: 70px;
+}
+
+.person {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.site-content-head {
+    display: flex;
+    height: 100%;
+}
+
+.turquoise {
+    background-color: #1c1e1f;
+}
+
+.white {
+    background-color: darkslategray;
 }
