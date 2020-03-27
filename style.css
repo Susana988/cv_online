@@ -79,6 +79,28 @@ h1 {
     margin: 15px 0 70px;
 }
 
+.person-socials-list a {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.person-socials-list a i {
+    font-family: 'FontAwesome';
+    font-style: normal;
+}
+
+.person-socials-list li {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person-socials-list li:not(:last-child) {
+    margin-right: 10px;
+}
+
 .site-content-head {
     display: flex;
     height: 100%;
