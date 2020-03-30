@@ -33,6 +33,36 @@ h1 {
     flex-basis: 70px;
 }
 
+.left-menu-download {
+    height: 74px;
+    background-color: seagreen;
+}
+
+.left-menu-list {
+    height: 270px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1e1f;
+}
+
+.left-menu-sidebar-btn {
+    height: 70px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00c483;
+}
+
+.left-menu-sidebar-btn i {
+    font-size: 22px;
+    color: #1c1e1f;
+}
+
 .person {
     display: inline-block;
     position: relative;
