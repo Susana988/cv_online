@@ -4,6 +4,12 @@ body {
     background-color: #000000;
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
+    height: 100vh;
+    height: calc(var(--vh, 1vh)*100);
+}
+
+element {
+    --vh: 6.25px;
 }
 
 h1 {
@@ -13,7 +19,8 @@ h1 {
 /* Class section */
 
 .container {
-    background-color: chocolate;
+    height: 98%;
+    padding-top: 1%;
 }
 
 .entry-title {
@@ -22,6 +29,10 @@ h1 {
     line-height: normal;
     padding-right: 30px;
     color: #ffffff;
+}
+
+.height-100 {
+    height: 100%;
 }
 
 .left-menu {
@@ -77,6 +88,10 @@ h1 {
 .left-menu-sidebar-btn i {
     font-size: 22px;
     color: #1c1e1f;
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }
 
 .person {
@@ -150,12 +165,4 @@ h1 {
 .site-content-head {
     display: flex;
     height: 100%;
-}
-
-.turquoise {
-    background-color: #1c1e1f;
-}
-
-.white {
-    background-color: darkslategray;
 }
