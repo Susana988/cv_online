@@ -1,5 +1,14 @@
 /* HTML section */
 
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #00c483;
+}
+
 body {
     background-color: #000000;
     font-family: 'Roboto', sans-serif;
@@ -49,6 +58,13 @@ h1 {
     background-color: seagreen;
 }
 
+.left-menu-download a {
+    padding: 25.5px 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+}
+
 .left-menu-list {
     width: 100%;
     position: relative;
@@ -67,12 +83,11 @@ h1 {
 }
 
 .left-menu-list-icons li {
-    background-color: yellow;
     width: 100%;
     display: inline-block;
-    padding: 16px;
+    padding: 10px;
     text-align: center;
-    font-size: 16px;
+    font-size: 22px;
 }
 
 .left-menu-sidebar-btn {
@@ -141,7 +156,6 @@ h1 {
 }
 
 .person-socials-list a {
-    color: #ffffff;
     font-size: 18px;
 }
 
