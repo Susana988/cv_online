@@ -1,9 +1,24 @@
 /* HTML section */
 
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #00c483;
+}
+
 body {
     background-color: #000000;
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
+    height: 100vh;
+    height: calc(var(--vh, 1vh)*100);
+}
+
+element {
+    --vh: 6.25px;
 }
 
 h1 {
@@ -13,7 +28,8 @@ h1 {
 /* Class section */
 
 .container {
-    background-color: chocolate;
+    height: 98%;
+    padding-top: 1%;
 }
 
 .entry-title {
@@ -22,6 +38,10 @@ h1 {
     line-height: normal;
     padding-right: 30px;
     color: #ffffff;
+}
+
+.height-100 {
+    height: 100%;
 }
 
 .left-menu {
@@ -33,10 +53,126 @@ h1 {
     flex-basis: 70px;
 }
 
+.left-menu-download {
+    height: 74px;
+}
+
+.left-menu-download a {
+    padding: 25.5px 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.left-menu-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1e1f;
+}
+
+.left-menu-list-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 270px;
+    overflow: hidden;
+}
+
+.left-menu-list-icons li {
+    width: 100%;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.left-menu-sidebar-btn {
+    height: 70px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00c483;
+}
+
+.left-menu-sidebar-btn i {
+    font-size: 22px;
+    color: #1c1e1f;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
 .person {
     display: inline-block;
     position: relative;
     width: 100%;
+}
+
+.person-img {
+    background-image: url("susana_img.jpg");
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.person-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.person-name {
+    font-weight: 900;
+    line-height: 1.17;
+    color: #ffffff;
+    text-align: center;
+}
+
+.person-position {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    line-height: normal;
+    color: #00c483;
+}
+
+.person-socials-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin: 15px 0 70px;
+}
+
+.person-socials-list a {
+    font-size: 18px;
+}
+
+.person-socials-list a i {
+    font-family: 'FontAwesome';
+    font-style: normal;
+}
+
+.person-socials-list li {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person-socials-list li:not(:last-child) {
+    margin-right: 10px;
 }
 
 .site-content-head {
@@ -44,10 +180,9 @@ h1 {
     height: 100%;
 }
 
-.turquoise {
-    background-color: #1c1e1f;
-}
-
-.white {
-    background-color: darkslategray;
+/* 767px */
+@media (max-width: 767px) {
+    .person {
+        display: none;
+    }
 }
