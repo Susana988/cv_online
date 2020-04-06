@@ -1,6 +1,6 @@
 /* HTML section */
 
-a {
+a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     color: #ffffff;
 }
@@ -55,7 +55,6 @@ h1 {
 
 .left-menu-download {
     height: 74px;
-    background-color: seagreen;
 }
 
 .left-menu-download a {
@@ -179,4 +178,11 @@ h1 {
 .site-content-head {
     display: flex;
     height: 100%;
+}
+
+/* 767px */
+@media (max-width: 767px) {
+    .person {
+        display: none;
+    }
 }
