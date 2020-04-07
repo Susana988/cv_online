@@ -204,6 +204,6 @@ h1 {
         max-width: 50px;
     }
     .site-content-inner-right {
-        max-width: calc(100%-50px);
+        max-width: calc(100% - 50px);
     }
 }
