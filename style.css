@@ -180,9 +180,30 @@ h1 {
     height: 100%;
 }
 
+.site-content-inner-left {
+    max-width: 50%;
+}
+
+.site-content-inner-right {
+    max-width: 50%;
+    background-color: orange;
+}
+
 /* 767px */
+
 @media (max-width: 767px) {
     .person {
         display: none;
+    }
+    .left-menu {
+        flex-basis: unset;
+        width: 100%;
+        margin: 0;
+    }
+    .site-content-inner-left {
+        max-width: 50px;
+    }
+    .site-content-inner-right {
+        max-width: calc(100%-50px);
     }
 }
