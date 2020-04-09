@@ -11,7 +11,7 @@ a:hover {
 
 body {
     background-color: #000000;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #ffffff;
     height: 100vh;
     height: calc(var(--vh, 1vh)*100);
@@ -26,6 +26,19 @@ h1 {
 }
 
 /* Class section */
+
+.about-list {
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.67;
+    color: #00c483;
+}
+
+.about-list .about-item::after {
+    content: "/";
+}
 
 .container {
     height: 98%;
@@ -187,7 +200,6 @@ h1 {
 .site-content-inner-right {
     max-width: 50%;
     flex: auto;
-    background-color: orange;
 }
 
 .site-content-page {
@@ -197,8 +209,6 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-
-    background-color: yellow;
 }
 
 .site-content-page-wrap {
@@ -206,8 +216,7 @@ h1 {
     margin: 40px 0;
     overflow: hidden;
     position: relative;
-
-    background-color: red;
+    padding: 0 5px 0 35px;
 }
 
 /* 767px */
@@ -239,3 +248,4 @@ h1 {
     .site-content-page-wrap {
         padding: 0 5px 0 40px;
     }
+}
