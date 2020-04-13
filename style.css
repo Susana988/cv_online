@@ -11,7 +11,7 @@ a:hover {
 
 body {
     background-color: #000000;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #ffffff;
     height: 100vh;
     height: calc(var(--vh, 1vh)*100);
@@ -26,6 +26,61 @@ h1 {
 }
 
 /* Class section */
+
+.about-list {
+    display: flex;
+}
+
+.about-list .about-item {
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.67;
+    color: #00c483;
+}
+
+.about-list .about-item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.about-list .about-item::after {
+    content: "/";
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.67;
+    color: #ffffff;
+    opacity: 0.25;
+    padding-left: 15px;
+}
+
+.about-list .about-item:last-child::after {
+    content: "";
+}
+
+.about-resume {
+    line-height: 1.73;
+    color: #888888;
+    margin-top: 20px;
+}
+
+.about {
+    padding-right: 30px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.about::after {
+    content: "";
+    background-color: #ffffff;
+    opacity: 0.09;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 30px;
+}
 
 .container {
     height: 98%;
@@ -180,9 +235,60 @@ h1 {
     height: 100%;
 }
 
+.site-content-inner-left {
+    max-width: 50%;
+}
+
+.site-content-inner-right {
+    max-width: 50%;
+    flex: auto;
+}
+
+.site-content-page {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.site-content-page-wrap {
+    width: 100%;
+    margin: 40px 0;
+    overflow: hidden;
+    position: relative;
+    padding: 0 5px 0 35px;
+    background-color: #1c1e1f;
+}
+
 /* 767px */
+
 @media (max-width: 767px) {
     .person {
         display: none;
+    }
+    .left-menu {
+        flex-basis: unset;
+        width: 100%;
+        margin: 0;
+    }
+    .site-content-inner-left {
+        max-width: 50px;
+    }
+    .site-content-inner-right {
+        max-width: calc(100% - 50px);
+    }
+}
+
+@media (max-width: 991px) {
+    .site-content-page-wrap {
+        padding: 0 1px 0 30px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .site-content-page-wrap {
+        padding: 0 5px 0 40px;
     }
 }
