@@ -29,6 +29,10 @@ h1 {
 
 .about-list {
     display: flex;
+}
+
+.about-list .about-item {
+    display: flex;
     font-size: 18px;
     font-weight: 500;
     font-style: italic;
@@ -36,8 +40,46 @@ h1 {
     color: #00c483;
 }
 
+.about-list .about-item:not(:last-child) {
+    margin-right: 15px;
+}
+
 .about-list .about-item::after {
     content: "/";
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.67;
+    color: #ffffff;
+    opacity: 0.25;
+    padding-left: 15px;
+}
+
+.about-list .about-item:last-child::after {
+    content: "";
+}
+
+.about-resume {
+    line-height: 1.73;
+    color: #888888;
+    margin-top: 20px;
+}
+
+.about {
+    padding-right: 30px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.about::after {
+    content: "";
+    background-color: #ffffff;
+    opacity: 0.09;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 30px;
 }
 
 .container {
@@ -217,6 +259,7 @@ h1 {
     overflow: hidden;
     position: relative;
     padding: 0 5px 0 35px;
+    background-color: #1c1e1f;
 }
 
 /* 767px */
