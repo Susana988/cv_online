@@ -25,6 +25,10 @@ h1 {
     font-size: 70px;
 }
 
+h5 {
+    font-size: 20px;
+}
+
 /* Class section */
 
 .about-list {
@@ -86,6 +90,41 @@ h1 {
 .container {
     height: 98%;
     padding-top: 1%;
+}
+
+.content-item {
+    background-color: salmon;
+    width: 50%;
+    margin-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.content-item i {
+    font-size: 30px;
+    color: #00c483;
+}
+
+.content-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -30px;
+}
+
+.content-text {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.73;
+    color: #888888;
+}
+
+.content-title {
+    margin-top: 10px;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1.5;
 }
 
 .entry-title {
