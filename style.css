@@ -73,7 +73,6 @@ h5 {
     padding-right: 30px;
     position: relative;
     padding-bottom: 50px;
-    background-color: yellowgreen;
 }
 
 .info-wrap::after {
@@ -93,7 +92,6 @@ h5 {
 }
 
 .content-item {
-    background-color: salmon;
     width: 50%;
     margin-bottom: 30px;
     padding-right: 20px;
@@ -307,7 +305,6 @@ h5 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: red;
 }
 
 /* 767px */
