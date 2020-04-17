@@ -25,6 +25,14 @@ h1 {
     font-size: 70px;
 }
 
+h3 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: lowercase;
+    margin-bottom: 0;
+}
+
 h5 {
     font-size: 20px;
 }
@@ -309,6 +317,16 @@ h5 {
     color: #00c483;
     font-size: 30px;
     margin-right: 20px;
+}
+
+.skills-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills-line {
+    width: 100%;
 }
 
 .skills-name {
