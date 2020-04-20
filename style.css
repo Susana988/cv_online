@@ -145,11 +145,6 @@ h5 {
     height: 100%;
 }
 
-.skills-item:not(:last-child) {
-    margin-bottom: 20px;
-    background-color: palevioletred;
-}
-
 .left-menu {
     display: flex;
     flex-direction: column;
@@ -325,20 +320,36 @@ h5 {
     justify-content: space-between;
 }
 
+.skills-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
 .skills-line {
     width: 100%;
+    height: 3px;
+    margin-top: 5px;
+    background-color: #333333;
+    position: relative;
+}
+
+.skills-line-fill {
+    background-color: #00c483;
+    width: 95%;
+    height: 3px;
 }
 
 .skills-name {
     font-weight: 900;
     line-height: normal;
     font-size: 15px;
+    text-transform: lowercase;
 }
 
 .skills-value {
     font-weight: 900;
     line-height: normal;
     display: inline-block;
+    color: #00c483;
 }
 
 .title-wrap {
