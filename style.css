@@ -11,7 +11,6 @@ a:hover {
 
 body {
     background-color: #000000;
-    font-family: "Roboto", sans-serif;
     color: #ffffff;
     height: 100vh;
     height: calc(var(--vh, 1vh)*100);
@@ -23,6 +22,18 @@ element {
 
 h1 {
     font-size: 70px;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: lowercase;
+    margin-bottom: 0;
+}
+
+h5 {
+    font-size: 20px;
 }
 
 /* Class section */
@@ -65,13 +76,48 @@ h1 {
     margin-top: 20px;
 }
 
-.about {
+.education-description {
+    line-height: 1.6;
+    color: #888888;
+}
+
+.education-item {
+    margin-bottom: 30px;
+}
+
+.education-list {
+    margin-bottom: -30px;
+}
+
+.education-local {
+    color: #888888;
+    font-size: 13px;
+    line-height: 1.85;
+    margin-bottom: 5px;
+    opacity: 0.5;
+}
+
+.education-name {
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.education-period {
+    margin-bottom: 5px;
+    color: #00c483;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.info-wrap {
     padding-right: 30px;
     position: relative;
     padding-bottom: 50px;
 }
 
-.about::after {
+.info-wrap::after {
     content: "";
     background-color: #ffffff;
     opacity: 0.09;
@@ -87,6 +133,40 @@ h1 {
     padding-top: 1%;
 }
 
+.content-item {
+    width: 50%;
+    margin-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.content-item i {
+    font-size: 30px;
+    color: #00c483;
+}
+
+.content-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -30px;
+}
+
+.content-text {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.73;
+    color: #888888;
+}
+
+.content-title {
+    margin-top: 10px;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
 .entry-title {
     text-transform: lowercase;
     font-weight: 900;
@@ -95,8 +175,40 @@ h1 {
     color: #ffffff;
 }
 
-.height-100 {
+.fas .fa-globe-europe::before .height-100 {
     height: 100%;
+}
+
+.language-item {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.language-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.language-level {
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.language-name {
+    font-weight: 800;
+    line-height: normal;
+    font-size: 26px;
+    color: #00c483;
 }
 
 .left-menu {
@@ -260,6 +372,57 @@ h1 {
     position: relative;
     padding: 0 5px 0 35px;
     background-color: #1c1e1f;
+}
+
+.site-content-page-wrap .title-wrap-icon {
+    color: #00c483;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.skills-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.skills-line {
+    width: 100%;
+    height: 3px;
+    margin-top: 5px;
+    background-color: #333333;
+    position: relative;
+}
+
+.skills-line-fill {
+    background-color: #00c483;
+    width: 95%;
+    height: 3px;
+}
+
+.skills-name {
+    font-weight: 900;
+    line-height: normal;
+    font-size: 15px;
+    text-transform: lowercase;
+}
+
+.skills-value {
+    font-weight: 900;
+    line-height: normal;
+    display: inline-block;
+    color: #00c483;
+}
+
+.title-wrap {
+    margin: 40px 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 /* 767px */
