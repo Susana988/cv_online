@@ -36,6 +36,10 @@ h5 {
     font-size: 20px;
 }
 
+h6 {
+    margin-top: 0;
+}
+
 /* Class section */
 
 .about-list {
@@ -133,6 +137,31 @@ h5 {
     padding-top: 1%;
 }
 
+.content-date-work {
+    margin-top: 5px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+    background-color: #00c483;
+    padding: 5px 7px;
+    line-height: 1;
+    display: inline-block;
+    color: #1c1e1f;
+}
+
+.content-detail1-wrap {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-detail2-wrap {
+    background-color: blue;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
 .content-item {
     width: 50%;
     margin-bottom: 30px;
@@ -145,12 +174,31 @@ h5 {
     color: #00c483;
 }
 
+.content-item-work {
+    margin-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.content-items-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .content-wrap {
     display: flex;
     flex-wrap: wrap;
     margin-left: -20px;
     margin-right: -20px;
     margin-bottom: -30px;
+}
+
+.content-work-company {
+    font-size: 15px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.67;
+    color: #00c483;
 }
 
 .content-text {
@@ -165,6 +213,10 @@ h5 {
     font-weight: 900;
     color: #ffffff;
     line-height: 1.5;
+}
+
+.content-title-work {
+    margin-bottom: 0;
 }
 
 .entry-title {
@@ -377,7 +429,7 @@ h5 {
 .site-content-page-wrap .title-wrap-icon {
     color: #00c483;
     font-size: 30px;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .skills-item {
@@ -424,6 +476,13 @@ h5 {
     align-items: center;
     justify-content: flex-start;
 }
+
+.tttm_logo_white {
+    background-image: url("../tttm_logo_white.png");
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;}
 
 /* 767px */
 
