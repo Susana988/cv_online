@@ -85,6 +85,10 @@ h6 {
     color: #888888;
 }
 
+.education-description ul {
+    list-style: none;
+}
+
 .education-item {
     margin-bottom: 30px;
 }
@@ -149,17 +153,9 @@ h6 {
     color: #1c1e1f;
 }
 
-.content-detail1-wrap {
-    width: 70%;
+.content-detail-wrap {
     display: flex;
     flex-direction: column;
-}
-
-.content-detail2-wrap {
-    background-color: blue;
-    width: 30%;
-    align-items: center;
-    justify-content: center;
 }
 
 .content-item {
@@ -181,6 +177,7 @@ h6 {
 }
 
 .content-items-list {
+    justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
 }
@@ -477,12 +474,17 @@ h6 {
     justify-content: flex-start;
 }
 
-.tttm_logo_white {
-    background-image: url("../tttm_logo_white.png");
-    height: 100%;
+.company_logo {
+    height: 50px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;}
+    background-position: center;
+    width: 150px;
+}
+
+.company_logo img {
+    width: 100%;
+}
 
 /* 767px */
 
