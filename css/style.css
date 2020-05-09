@@ -136,6 +136,35 @@ h6 {
     right: 30px;
 }
 
+.contact-icon {
+    margin-right: 10px;
+    color: #00c483;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.contact-item {
+    margin-bottom: 10px;
+    margin-right: -25px;
+    margin-left: -25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-text{
+    font-size: 15px;
+    line-height: 1.73;
+    color: #888888;
+}
+
+.contact-wrap {
+    display: flex;
+    padding-left: 25px;
+    padding-right: 25px;
+    align-items: center;
+    width: 50%;
+}
+
 .container {
     height: 98%;
     padding-top: 1%;
@@ -331,7 +360,7 @@ h6 {
 }
 
 .person-img {
-    background-image: url("../images/susana_img.jpg");
+    background-image: url("../images/susana.jpg");
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
